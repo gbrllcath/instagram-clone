@@ -8,15 +8,16 @@ const posts = [
         comment: "just took a few mushrooms lol",
         likes: 21
     },
-    {
-        name: "Gustave Courbet",
-        username: "gus1819",
-        location: "Ornans, France",
-        avatar: "images/avatar-courbet.jpg",
-        post: "images/post-courbet.jpg",
-        comment: "i'm feelin a bit stressed tbh",
-        likes: 4
-    },
+        {
+        name: "Gustav Klimt",
+        username: "goldenboy1862",
+        location: "Vienna, Austria",
+        avatar: "images/avatar-gustav.jpg",
+        post: "images/post-gustav.jpg",
+        comment: "gold leaf is not a personality, it's a lifestyle",
+        likes: 7305
+
+    }, 
         {
         name: "Joseph Ducreux",
         username: "jd1735",
@@ -25,6 +26,24 @@ const posts = [
         post: "images/post-ducreux.jpg",
         comment: "gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
         likes: 152
+    },
+        {
+        name: "Claude Monet",
+        username: "monet1840",
+        location: "Giverny, France",
+        avatar: "images/avatar-monet.jpg",
+        post: "images/post-monet.jpg",
+        comment: "windy day, hat on, umbrella up. We are not letting the weather ruin this shot",
+        likes: 152
+    },       
+        {
+        name: "Gustave Courbet",
+        username: "gus1819",
+        location: "Ornans, France",
+        avatar: "images/avatar-courbet.jpg",
+        post: "images/post-courbet.jpg",
+        comment: "i'm feelin a bit stressed tbh",
+        likes: 4
     }
 ]
 
@@ -38,12 +57,12 @@ for (let i = 0; i < posts.length; i++) {
         <div class="profile-container">
             <img class="avatar" src="${currentPost.avatar}" />
             <div class="profile-info">
-                <h2 class="mtb-0" id="name">${currentPost.name}</h2>
-                <p class="mtb-0" id="location">${currentPost.location}</p>
+                <h2 class="mtb-0">${currentPost.name}</h2>
+                <p class="mtb-0">${currentPost.location}</p>
             </div>
         </div>
 
-        <img class="post-img" id="post"src="${currentPost.post}" loading="lazy" />
+        <img class="post-img" src="${currentPost.post}" />
 
         <div class="bottom-container">  
             <div class="icon-container">
