@@ -24,6 +24,13 @@ body {
 }
 
 /* typography */
+h1 {
+    font-family: "Playwrite AR", cursive;
+    font-size: 18px;
+    font-weight: 800;
+    padding-left: 5px;
+}
+
 h2,
 h3,
 .likes {
@@ -120,10 +127,7 @@ p {
 
 .icon-btn:hover,
 .icon-btn:focus {
-    color: red;
-}
-
-.icon-btn img:hover,
-.icon-btn img:focus {
-    color: red;
+    cursor: pointer;
+    opacity: 0.6;
+    transform: scale(1.1);
 }
