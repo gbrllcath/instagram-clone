@@ -83,12 +83,13 @@ p {
     gap: 15px;
 }
 
+.comments-container h3,
+.comments-container p {
+    display: inline;
+}
 
-.comments-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
+.comments-container h3 {
+    margin-right: 4px;
 }
 
 .bottom-container {
