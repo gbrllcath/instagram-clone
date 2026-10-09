@@ -1,0 +1,129 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.phone {
+    margin: 20px auto;
+    width: 375px;
+    border: 1px solid #404040;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    
+}
+
+/* utility */
+.mtb-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* typography */
+h2,
+h3,
+.likes {
+    font-size: 13px;
+    font-weight: 700;
+
+}
+
+p {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* layout */
+.header-container,
+.profile-container,
+.comments-container,
+.likes,
+.icon-container {
+    padding: 0px 10px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 67px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #C6C6C6;
+}
+
+.profile-container {
+    display: flex;
+    gap: 15px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    gap: 15px;
+}
+
+
+.comments-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* images */
+#logo {
+    height: 50px;
+}
+
+.avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+.post-img {
+    width: 375;
+}
+
+/* buttons */
+.icon-btn {
+    background: none;
+    border: none;
+    padding: 0;
+
+}
+
+.icon-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-btn:hover,
+.icon-btn:focus {
+    color: red;
+}
+
+.icon-btn img:hover,
+.icon-btn img:focus {
+    color: red;
+}
