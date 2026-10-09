@@ -15,7 +15,7 @@ const posts = [
         avatar: "images/avatar-gustav.jpg",
         post: "images/post-gustav.jpg",
         comment: "gold leaf is not a personality, it's a lifestyle",
-        likes: 7305
+        likes: 730
 
     }, 
         {
@@ -43,11 +43,13 @@ const posts = [
         avatar: "images/avatar-courbet.jpg",
         post: "images/post-courbet.jpg",
         comment: "i'm feelin a bit stressed tbh",
-        likes: 4
+        likes: 80
     }
 ]
 
 let postsEl = document.getElementById("posts")
+
+function renderPosts() {
 
 let postsHtml = ""
 
@@ -66,7 +68,7 @@ for (let i = 0; i < posts.length; i++) {
 
         <div class="bottom-container">  
             <div class="icon-container">
-                <button class="icon-btn">
+                <button class="icon-btn" onclick="likePost(${i})">
                     <img src="images/icon-heart.png" alt="like" />
                 </button>
                 <button class="icon-btn">
@@ -88,3 +90,11 @@ for (let i = 0; i < posts.length; i++) {
 }
 
 postsEl.innerHTML = postsHtml
+}
+
+renderPosts()
+
+function likePost (index) {
+    posts[index].likes += 1
+    renderPosts()
+}
